@@ -5,7 +5,7 @@
 
 > 注意： 非官方
 
-- `zjut-report.typ` 模板文件
+- `template/template.typ` 模板文件
 - `example.typ` 样例文件
 - [example.pdf](./example.pdf) 样例文件的pdf
 - `img` 静态文件

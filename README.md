@@ -5,7 +5,7 @@ Some report templates of Zhejiang University of Technology.
 
 > Attention: This is not a official template.
 
-- `zjut-report.typ` The template file.
+- `template/template.typ` The template file.
 - `example.typ` The example report imported the template.
 - [example.pdf](./example.pdf) The `pdf`
 - `img` The static files.
