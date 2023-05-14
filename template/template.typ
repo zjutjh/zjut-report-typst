@@ -2,6 +2,11 @@
 #import "utils.typ" :*
 #import "covers.typ":*
 
+#let _empty_par() = {
+  v(-1em)
+  box()
+}
+
 #let project(
   title: "Title",
   authors: ("author1", "author2"),
@@ -17,7 +22,7 @@
   set document(title: title, author: authors);
   set page("a4", numbering: "1")
   set text(font: font_style.songti, size: font_size.五号, lang: "zh");
-  
+  set par(first-line-indent: 2em);
   if cover_style == "normal" {
     cover_normal(
       title: title, 
@@ -100,6 +105,11 @@
     }
   }
 
+  show heading: it => {
+    set text(weight: "bold", font: font_style.heiti, size: 12pt)
+    set block(above: 1.5em, below: 1em)
+    it
+  } + _empty_par()
   
   set heading(numbering: (..nums) => {
     nums.pos().map(str).join(".") + "　"
