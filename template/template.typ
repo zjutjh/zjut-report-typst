@@ -99,7 +99,17 @@
       let c = counter("code-chapter" + str(chapt))
       c.step()
     })
-
+    } else if it.kind == "customref" {
+      set text(font: font_style.songti, size: 10.5pt)
+      align(left)[
+      \[ #it.counter.display() \] #h(0.5em)
+      #it.body
+      ]
+      locate(loc => {
+        let chapt = counter(heading).at(loc).at(0)
+        let c = counter("customref-chapter" + str(chapt))
+        c.step()
+      })
     } else {
       it
     }

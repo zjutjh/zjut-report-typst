@@ -87,3 +87,10 @@ columns: (auto, auto),
 代码测试引用@code:test,
 代码测试引用@code:test2
 
+@ref:1
+
+#pagebreak()
+
+#reftitle
+
+#customref("李晓东，张庆红，叶瑾琳.气候学研究的若干理论问题[J].北京大学学报:自然科学版，1999,35(1):101-106.") <ref:1>

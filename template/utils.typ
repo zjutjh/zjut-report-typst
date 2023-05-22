@@ -28,4 +28,6 @@ date: (2023,5,14)
     )
 }
 
-
+#let reftitle = {
+  heading([参考文献], level: 1, numbering: none)
+}

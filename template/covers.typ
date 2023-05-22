@@ -148,3 +148,10 @@
   )
 }
 
+#let customref(cite) = {
+  figure(
+    cite,
+    supplement: [],
+    kind: "customref",
+  )
+}
