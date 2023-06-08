@@ -10,6 +10,8 @@ Some report templates of Zhejiang University of Technology.
 - [example.pdf](./example.pdf) The `pdf`
 - `img` The static files.
 
+### How to Use
+
 ## Typst
 
 As `Typst` is a very new tool. (v0.1.0 was released in Apr, 2023)
