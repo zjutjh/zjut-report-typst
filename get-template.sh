@@ -7,5 +7,3 @@ mv zjut-report-typst/template ./
 rm zjut-report-typst -rf
 
 echo "Done!"
-
-rm get-template.sh
