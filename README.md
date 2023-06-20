@@ -12,6 +12,10 @@ Some report templates of Zhejiang University of Technology.
 
 ### How to Use
 
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/zjutjh/zjut-report-typst/main/get-template.sh -O -)"
+```
+
 ## Typst
 
 As `Typst` is a very new tool. (v0.1.0 was released in Apr, 2023)
