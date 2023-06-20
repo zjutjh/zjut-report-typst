@@ -110,11 +110,21 @@
   })
 }
 
+#let ref_num(_) = {
+  locate(loc => {
+    let chapt = counter(heading).at(loc).at(0)
+    let c = counter("customref-chapter" + str(chapt))
+    let n = c.at(loc).at(0)
+    "[" + str(n + 1) + "]"
+  })
+}
+
 #let equation(equation, caption: "") = {
   figure(
     equation,
     caption: caption,
     supplement: [公式],
+    numbering: equation_num,
     kind: "equation",
   )
 }
@@ -124,6 +134,7 @@
     tbl,
     caption: caption,
     supplement: [表],
+    numbering: table_num,
     kind: "table",
   )
 }
@@ -133,6 +144,7 @@
     img,
     caption: caption,
     supplement: [图],
+    numbering: image_num,
     kind: "image",
   )
 }
@@ -151,7 +163,8 @@
 #let customref(cite) = {
   figure(
     cite,
-    supplement: [],
+    supplement: none,
+    numbering: ref_num,
     kind: "customref",
   )
 }
