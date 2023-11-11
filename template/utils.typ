@@ -27,7 +27,3 @@ date: (2023,5,14)
     indent: true,
     )
 }
-
-#let reftitle = {
-  heading([参考文献], level: 1, numbering: none)
-}

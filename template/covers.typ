@@ -110,12 +110,12 @@
   })
 }
 
-#let ref_num(_) = {
+#let code_num(_) = {
   locate(loc => {
     let chapt = counter(heading).at(loc).at(0)
-    let c = counter("customref-chapter" + str(chapt))
+    let c = counter("code-chapter" + str(chapt))
     let n = c.at(loc).at(0)
-    "[" + str(n + 1) + "]"
+    str(chapt) + "-" + str(n + 1)
   })
 }
 
@@ -156,15 +156,7 @@
     ],
     caption: caption,
     supplement: [代码],
+    numbering: code_num,
     kind: "code",
-  )
-}
-
-#let customref(cite) = {
-  figure(
-    cite,
-    supplement: none,
-    numbering: ref_num,
-    kind: "customref",
   )
 }

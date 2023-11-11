@@ -52,26 +52,12 @@
     if it.kind == "image" {
       set text(font: font_style.heiti, size: 12pt)
       it.body
-      it.supplement
-      " " + it.counter.display(it.numbering)
-      "　" + it.caption
-      locate(loc => {
-        let chapt = counter(heading).at(loc).at(0)
-        let c = counter("image-chapter" + str(chapt))
-        c.step()
-      })
+      it.caption
     } else if it.kind == "table" {
       set text(font: font_style.heiti, size: 12pt)
-      it.supplement
-      " " + it.counter.display(it.numbering)
-      "　" + it.caption
+      it.caption
       set text(font: font_style.songti, size: 10.5pt)
       it.body
-      locate(loc => {
-        let chapt = counter(heading).at(loc).at(0)
-        let c = counter("table-chapter" + str(chapt))
-        c.step()
-      })
     } else if it.kind == "equation" {
       // 通过大比例来达到中间和靠右的排布
       grid(
@@ -81,35 +67,11 @@
           it.counter.display(it.numbering)
         )
       )
-      locate(loc => {
-        let chapt = counter(heading).at(loc).at(0)
-        let c = counter("equation-chapter" + str(chapt))
-        c.step()
-      })
     } else if it.kind == "code"{
       set text(font: font_style.songti, size: 10.5pt)
       it.body
       set text(font: font_style.songti, size: 10pt)
-      it.supplement
-      " " + it.counter.display(it.numbering)
-      "　" + it.caption
-
-    locate(loc => {
-      let chapt = counter(heading.where(level : 1)).at(loc).at(0)
-      let c = counter("code-chapter" + str(chapt))
-      c.step()
-    })
-    } else if it.kind == "customref" {
-      set text(font: font_style.songti, size: 10.5pt)
-      align(left)[
-      \[ #it.counter.display() \] #h(0.5em)
-      #it.body
-      ]
-      locate(loc => {
-        let chapt = counter(heading).at(loc).at(0)
-        let c = counter("customref-chapter" + str(chapt))
-        c.step()
-      })
+      it.caption
     } else {
       it
     }

@@ -1,8 +1,12 @@
 #import "template/template.typ": *
 
 #show: project.with(
-  title: "测试标题",
+  title: "xxx课程实验报告",
+  name:"xxx实验",
+  id: "202110001000",
+  class: "计科2100",
   authors: "作者",
+  department: "计算机学院",
   date: (2023, 5, 15),
   cover_style: "zjut_report",
 )
@@ -40,6 +44,12 @@
 其所厚者薄，而其所薄者厚，未之有也。
 此谓知本，此谓知之至也。
 
+== 小标题测试2
+
+测试测试
+
+= 大标题测试2
+
 #img(
 image("./template/asserts/校名.png"),
 caption: "测试图片, 浙江工业大学",
@@ -73,7 +83,7 @@ columns: (auto, auto),
     std::cout << "Hello World!\n";
     return 0;
   }
-  ```,
+```,
   caption: "测试代码",
 ) <code:test>
 
@@ -87,10 +97,6 @@ columns: (auto, auto),
 代码测试引用@code:test,
 代码测试引用@code:test2
 
-@ref:1
+测试参考文献引用@test
 
-#pagebreak()
-
-#reftitle
-
-#customref("李晓东，张庆红，叶瑾琳.气候学研究的若干理论问题[J].北京大学学报:自然科学版，1999,35(1):101-106.") <ref:1>
+#bibliography("bib.yaml", style:"gb-7114-2015-numeric")

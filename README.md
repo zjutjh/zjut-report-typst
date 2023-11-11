@@ -1,32 +1,32 @@
 ## ZJUT-Report-Typst
-[简体中文](./README.zh.md)
+浙江工业大学的报告模板
 
-Some report templates of Zhejiang University of Technology.
+> **注意**
+> 本仓库**并非官方模板**
 
-> Attention: This is not a official template.
+### 文件说明
+- `template/template.typ` 模板入口
+- `example.typ` 样例
+- [example.pdf](./example.pdf) 编译出的 `pdf` 文件
 
-- `template/template.typ` The template file.
-- `example.typ` The example report imported the template.
-- [example.pdf](./example.pdf) The `pdf`
-- `img` The static files.
+## 如何使用
 
-### How to Use
+### Linux/Mac
 
 ```bash
 sh -c "$(wget https://raw.githubusercontent.com/zjutjh/zjut-report-typst/main/get-template.sh -O -)"
 ```
 
-## Typst
+### 手动
 
-As `Typst` is a very new tool. (v0.1.0 was released in Apr, 2023)
+Clone 本仓库后手动导入
 
-The template could break any time.
+## 关于 Typst
 
-## This template
+Typst 是一个新的基于 Markup 的排版引擎，类似于 $\LaTeX$
+由于 Typst 还处于开发阶段，本模板可能随时出现问题
 
-This template is not impelement compeletely. 
-Please issue or pull request, if you have any suggestion.
-
-## Reference
+可以参考 Typst 的官方文档: https://typst.app/docs
+## 参考
 - [zjut-report-tex](https://github.com/zjutjh/zjut-report-tex)
 - [HUST-typst-template](https://github.com/werifu/HUST-typst-template)

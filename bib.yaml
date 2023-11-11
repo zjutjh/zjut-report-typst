@@ -1,0 +1,7 @@
+test:
+  title: 测试书籍
+  type: book
+  author: 张三
+  date: 2021
+  publisher: 某某出版社
+  address: 杭州
