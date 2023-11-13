@@ -48,3 +48,4 @@ Typst 是一个新的基于 Markup 的排版引擎，类似于 $\LaTeX$
 ## 参考
 - [zjut-report-tex](https://github.com/zjutjh/zjut-report-tex)
 - [HUST-typst-template](https://github.com/werifu/HUST-typst-template)
+- [i-figured](https://github.com/typst/packages/tree/main/packages/preview/i-figured/0.1.0)

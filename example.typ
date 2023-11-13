@@ -55,7 +55,6 @@ image("./template/asserts/校名.png"),
 caption: "测试图片, 浙江工业大学",
 ) <img:test>
 
-图片测试引用@img:test
 
 #equation(
   $a^2 + b^2 = c^2$,
@@ -99,4 +98,5 @@ columns: (auto, auto),
 
 测试参考文献引用@test
 
+图片测试引用@img:test
 #bibliography("bib.yaml", style:"gb-7114-2015-numeric")

@@ -83,39 +83,39 @@
   pagebreak()
 }
 
-#let equation_num(_) = {
+#let equation_num(n) = {
   locate(loc => {
     let chapt = counter(heading).at(loc).at(0)
     let c = counter("equation-chapter" + str(chapt))
-    let n = c.at(loc).at(0)
-    "(" + str(chapt) + "-" + str(n + 1) + ")"
+    // let n = c.at(loc).at(0)
+    str(chapt) + "-" + str(n)
   })
 }
 
-#let table_num(_) = {
+#let table_num(n) = {
   locate(loc => {
     let chapt = counter(heading).at(loc).at(0)
     let c = counter("table-chapter" + str(chapt))
-    let n = c.at(loc).at(0)
-    str(chapt) + "-" + str(n + 1)
+    // let n = c.at(loc).at(0)
+    str(chapt) + "-" + str(n)
   })
 }
 
-#let image_num(_) = {
+#let image_num(n) = {
   locate(loc => {
     let chapt = counter(heading).at(loc).at(0)
     let c = counter("image-chapter" + str(chapt))
-    let n = c.at(loc).at(0)
-    str(chapt) + "-" + str(n + 1)
+    // let n = c.at(loc).at(0)
+    str(chapt) + "-" + str(n)
   })
 }
 
-#let code_num(_) = {
+#let code_num(n) = {
   locate(loc => {
     let chapt = counter(heading).at(loc).at(0)
     let c = counter("code-chapter" + str(chapt))
-    let n = c.at(loc).at(0)
-    str(chapt) + "-" + str(n + 1)
+    // let n = c.at(loc).at(0)
+    str(chapt) + "-" + str(n)
   })
 }
 
