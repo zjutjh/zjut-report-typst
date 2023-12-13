@@ -99,4 +99,4 @@ columns: (auto, auto),
 测试参考文献引用@test
 
 图片测试引用@img:test
-#bibliography("bib.yaml", style:"gb-7114-2015-numeric")
+#bibliography("bib.yaml", style:"gb-7714-2015-numeric")
